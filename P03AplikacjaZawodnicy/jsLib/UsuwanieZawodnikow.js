@@ -15,9 +15,13 @@ $(document).ready(function () {
         })
             .done(function (msg) {
 
-                $("button[data-id='" + idUsuwanego + "']").closest("tr").hide(1500, function () {
-                    $(this).remove();
-                });
+                if (msg.success == true) {
+                    $("button[data-id='" + idUsuwanego + "']").closest("tr").hide(1500, function () {
+                        $(this).remove();
+                    });
+                } else {
+                    alert(msg.errorMessage);
+                }      
 
             });
 
