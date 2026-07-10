@@ -41,7 +41,8 @@
                         <td><%= z.DataUrodzenia.ToString("dd-MM-yyyy") %></td>
                         <td><%= z.Wzrost %></td>
                         <td><%= z.Waga %></td>
-                        <td><a class="btn btn-danger" href="TabelaZawodnikowGlowny.aspx?idUsuwanego=<%= z.Id_zawodnika %>">X</a></td>
+               <%--         <td><a class="btn btn-danger" href="TabelaZawodnikowGlowny.aspx?idUsuwanego=<%= z.Id_zawodnika %>">X</a></td>--%>
+                        <td><button data-id="<%= z.Id_zawodnika %>" class="btn btn-danger">X</button></td>
                     </tr>
 
                     <%   }
@@ -52,3 +53,4 @@
         </div>
     </div>
 </div>
+<script src="../jsLib/UsuwanieZawodnikow.js"></script>
