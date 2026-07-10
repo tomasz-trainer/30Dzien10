@@ -1,3 +1,6 @@
 <Solution>
   <Project Path="P01AjaxWstep/P01AjaxWstep.csproj" />
+  <Project Path="P03AplikacjaZawodnicy/P03AplikacjaZawodnicy.csproj" />
+  <Project Path="P06Zawodnicy.Shared/P06Zawodnicy.Shared.csproj" />
+  <Project Path="P08PolaczenieZBaza/P08PolaczenieZBaza.csproj" />
 </Solution>

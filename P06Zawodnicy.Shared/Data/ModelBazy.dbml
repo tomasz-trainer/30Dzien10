@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="BazaSportowa" Class="ModelBazyDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(localdb)\mssqllocaldb;Initial Catalog=BazaSportowa;Integrated Security=True;Encrypt=False;Trust Server Certificate=True" SettingsObjectName="P06Zawodnicy.Shared.Properties.Settings" SettingsPropertyName="BazaSportowaConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Zawodnicy" Member="ZawodnikDb">
+    <Type Name="ZawodnikDb">
+      <Column Name="Id_zawodnika" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Id_trenera" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Imie" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="Nazwisko" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="Kraj" Type="System.String" DbType="Char(3) NOT NULL" CanBeNull="false" />
+      <Column Name="Data_ur" Type="System.DateTime" DbType="DateTime2 NOT NULL" CanBeNull="false" />
+      <Column Name="Wzrost" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Waga" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>
