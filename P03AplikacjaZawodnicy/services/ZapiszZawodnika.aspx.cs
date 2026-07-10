@@ -45,6 +45,10 @@ namespace P03AplikacjaZawodnicy.services
                     success = errorMessage == string.Empty ? true : false,
                     errorMessage
                 });
+
+                Response.ContentType = "application/json";
+                Response.Write(json);
+
             }
 
            

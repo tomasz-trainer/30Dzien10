@@ -30,6 +30,7 @@ $(document).ready(function () {
             }
         })
             .done(function (msg) {
+                debugger;
                 if (msg.success == true) {
                     alert('Zapisano zmiany!');
                 } else {
