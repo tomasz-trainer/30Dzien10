@@ -1,5 +1,6 @@
 
 $(document).ready(function () {
+    //wyszukaj();
 
     $("#txtSzukaj").on("keypress", function (e) {
 

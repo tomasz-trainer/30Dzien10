@@ -70,6 +70,9 @@
                   </div>
 
                     <asp:Button ID="btnZapisz" CssClass="btn btn-primary btn-block" OnClick="btnZapisz_Click" runat="server" Text="Zapisz" />
+                     
+                    <button id="btnAjaxZapisz" class="btn btn-success" >Zapisz zmiany</button>
+
                 </form>
               </div>
             </div>

@@ -1,6 +1,6 @@
 <Solution>
-  <Project Path="P01AjaxWstep/P01AjaxWstep.csproj" />
-  <Project Path="P03AplikacjaZawodnicy/P03AplikacjaZawodnicy.csproj" />
-  <Project Path="P06Zawodnicy.Shared/P06Zawodnicy.Shared.csproj" />
-  <Project Path="P08PolaczenieZBaza/P08PolaczenieZBaza.csproj" />
+  <Project Path="P01AjaxWstep/P01AjaxWstep.csproj" Id="c8fdfee1-9d88-4d7a-b467-f2266df8fbae" />
+  <Project Path="P03AplikacjaZawodnicy/P03AplikacjaZawodnicy.csproj" Id="8b213ba3-fef0-4ce6-9c1d-5172394ba3a1" />
+  <Project Path="P06Zawodnicy.Shared/P06Zawodnicy.Shared.csproj" Id="58b0070f-e9a2-40ba-b596-814abbfed3b6" />
+  <Project Path="P08PolaczenieZBaza/P08PolaczenieZBaza.csproj" Id="3388558b-a681-4d70-8727-6f39dab88ec9" />
 </Solution>
