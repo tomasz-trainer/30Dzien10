@@ -49,6 +49,11 @@ namespace P06Zawodnicy.Shared.Services
             throw new NotImplementedException();
         }
 
+        public Zawodnik[] PodajZawodnikowFiltr(string szukanaFraza)
+        {
+            throw new NotImplementedException();
+        }
+
         public void Usun(Zawodnik zawodnik)
         {
             throw new NotImplementedException();

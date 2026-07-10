@@ -142,5 +142,27 @@ namespace P06Zawodnicy.Shared.Services
                 .ZawodnikDb.FirstOrDefault(x => x.Id_zawodnika == id);
             return mapujZawodnikow(z).FirstOrDefault();
         }
+
+        public Zawodnik[] PodajZawodnikowFiltr(string szukanaFraza)
+        {
+            szukanaFraza = szukanaFraza.ToLower();
+            var db = new ModelBazyDataContext();
+
+             var zawodnicy = db.ZawodnikDb
+                .Where(x=>
+                   x.Imie.ToLower().Contains(szukanaFraza) ||
+                   x.Nazwisko.ToLower().Contains(szukanaFraza) ||
+                   x.Kraj.ToLower().Contains(szukanaFraza) ||
+                   x.Data_ur.Year.ToString().Contains(szukanaFraza) ||
+                   x.Data_ur.Month.ToString().Contains(szukanaFraza) ||
+                   x.Data_ur.Day.ToString().Contains(szukanaFraza) ||
+                   x.Wzrost.ToString().Contains(szukanaFraza) ||
+                   x.Waga.ToString().Contains(szukanaFraza))
+                .ToArray();
+
+            return mapujZawodnikow(zawodnicy);
+
+
+        }
     }
 }

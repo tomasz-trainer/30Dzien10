@@ -20,5 +20,6 @@ namespace P06Zawodnicy.Shared.Services
 
         GrupaKraju[] PodajSredniWzrostDlaKazdegoKraju();
         Zawodnik PodajZawodnika(int v);
+        Zawodnik[] PodajZawodnikowFiltr(string szukanaFraza);
     }
 }
